@@ -1,0 +1,15 @@
+services:
+  calbench:
+    build: .
+    image: calbench:local
+    container_name: calbench
+    restart: unless-stopped
+    ports:
+      - "8090:8080"            # host:container — change 8090 if it's taken on CT 203
+    env_file: .env
+    volumes:
+      - ./data:/data           # profiles.json lives here; back this folder up
+    # Lets the container reach services running directly on CT 203 (e.g. a
+    # pip-installed OctoPrint on port 5000) as http://host.docker.internal:5000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

@@ -1,0 +1,23 @@
+{
+  "profiles": {
+    "overture-petg": {
+      "name": "Overture PETG",
+      "brand": "Overture",
+      "material": "PETG",
+      "modifier": "",
+      "colour": "",
+      "temp": 225,
+      "bed": 85,
+      "fan": 40,
+      "speed": 40,
+      "em": 1,
+      "k": 0.08,
+      "retract": 1.2,
+      "rspeed": 40,
+      "mvs": 8,
+      "notes": "Earlier stringing fix: 230–235°C with 0.8 mm retraction strung; 220–225°C with ~1.2 mm at 40–45 mm/s fixed it. Temp, retraction and the rest are untested starting points until the tower results are saved. Bed, fan, K and max flow are Prusa PETG defaults.",
+      "updatedAt": 1,
+      "byPrinter": {}
+    }
+  }
+}
